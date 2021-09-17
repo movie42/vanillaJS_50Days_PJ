@@ -11,9 +11,9 @@ body {
   align-items: center;
   min-width: 100vw;
   min-height: 100vh;
-  overflow: hidden;
+  overflow: scroll;
   font-family: sans-serif;
-  margin-bottom: 40px;
+  padding: 40px 0;
 }
 
 body h1 {

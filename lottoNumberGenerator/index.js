@@ -1,5 +1,3 @@
-import "./styles.css";
-
 const app = document.getElementById("app");
 const btn = document.createElement("button");
 const numbersContainer = document.createElement("div");

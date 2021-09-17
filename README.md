@@ -32,5 +32,3 @@
 - transition
 
 4. [Lotto Number Generator](./lottoNumberGenerator/readme.md)
-
-- [deploy](https://movie42.github.io/lotton-number-generator/)

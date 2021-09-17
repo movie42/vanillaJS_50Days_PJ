@@ -19,11 +19,11 @@
 > Project 1 : https://50projects50days.com/
 > start : 2021.9.9
 
-1. [Expand Card](./expand_card/readme.md)
+1. [Expand Card](./expand_card/index.html)
 
 - 이벤트 캡쳐링, 버블링, 위임, css transition
 
-2. [Progress Step](./progress_step/readme.md)
+2. [Progress Step](./progress_step/index.html)
 
 - 이벤트 캡쳐링, 버블링, 위임
 
@@ -31,4 +31,4 @@
 
 - transition
 
-4. [Lotto Number Generator](./lottoNumberGenerator/readme.md)
+4. [Lotto Number Generator](./lottoNumberGenerator/index.html)

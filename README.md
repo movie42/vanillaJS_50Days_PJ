@@ -1,6 +1,7 @@
 # 바닐라 자바스크립트 PJ
 
 > start : 2021.9.9
+> https://movie42.github.io/vanillaJS_PJ
 
 ## 목차
 
@@ -32,3 +33,7 @@
 - transition
 
 4. [Lotto Number Generator](./lottoNumberGenerator/index.html)
+
+5. [Moving Ball](./moving_ball/index.html)
+
+6. [Rotating_navigation](./rotating_navigation/index.html)

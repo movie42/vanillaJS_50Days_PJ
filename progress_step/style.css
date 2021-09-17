@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.step_wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.step_wrapper div {
+  display: flex;
+  font-size: 1.5em;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #ededed;
+  border: 5px solid #ededed;
+  border-radius: 50%;
+  transition: border 1s;
+}
+
+.step_wrapper span:not(:last-child) {
+  background-color: #ededed;
+  width: 100px;
+  height: 5px;
+  transition: background-color 1.5s;
+}
+
+.step_wrapper div.on {
+  color: #008031;
+  font-weight: bold;
+  border: 5px solid #397645;
+  transition: border 2s, color 2s;
+}
+
+.step_wrapper span.on {
+  background-color: #008031;
+  transition: background-color 0.5s;
+}
+
+.button_container {
+  margin-top: 50px;
+}
+
+.button_container button {
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: unset;
+  border: 2px solid #397645;
+  color: #397645;
+  border-radius: 20px;
+  width: 120px;
+  padding: 5px;
+  font-size: 1.2em;
+  margin-left: 15px;
+}
+
+.button_container button.none_activate {
+  background-color: #ededed;
+  color: #fff;
+  border-color: #ededed;
+}
+
+.button_container button.none_activate:hover {
+  cursor: not-allowed;
+  background-color: #ededed;
+  color: #fff;
+  font-weight: normal;
+  border-color: #ededed;
+}
+
+.button_container button:not(:last-child) {
+  margin-left: 0;
+}
+
+.button_container button:hover {
+  background-color: #397645;
+  color: #ffffff;
+  font-weight: bold;
+}

@@ -27,7 +27,7 @@
 
 - 이벤트 캡쳐링, 버블링, 위임
 
-3. [Hidden Search Widget](./hidden_search_widget/readme%20copy.md)
+3. [Hidden Search Widget](./hidden_search_widget/index.html)
 
 - transition
 

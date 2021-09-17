@@ -5,9 +5,11 @@
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "deploy": "npm run build && git add . && git commit -a -m 'latest build' && git push origin master"
   },
   "dependencies": {
+    "hyperapp": "^2.0.19",
     "parcel-bundler": "^1.6.1"
   },
   "devDependencies": {

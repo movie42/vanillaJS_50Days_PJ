@@ -8,7 +8,6 @@
   - [목차](#목차)
   - [규칙](#규칙)
   - [프로젝트 1](#프로젝트-1)
-  - [프로젝트 2](#프로젝트-2)
 
 ## 규칙
 
@@ -24,12 +23,14 @@
 
 - 이벤트 캡쳐링, 버블링, 위임, css transition
 
-## 프로젝트 2
-
 2. [Progress Step](./progress_step/readme.md)
 
 - 이벤트 캡쳐링, 버블링, 위임
 
 3. [Hidden Search Widget](./hidden_search_widget/readme%20copy.md)
-  
+
 - transition
+
+4. [Lotto Number Generator](./lottoNumberGenerator/readme.md)
+
+- [deploy](https://movie42.github.io/lotton-number-generator/)

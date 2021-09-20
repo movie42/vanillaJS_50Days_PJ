@@ -17,11 +17,10 @@ for (let i = 1; i < 46; i++) {
 const handleNumber = () => {
   const numberAry = [];
   let i = 0;
-
-  while (numberAry.length < 7) {
+  while (i < 6) {
+    console.log(numberAry.length);
     const number = Math.floor(Math.random() * (46 - 1)) + 1;
-
-    if (i < 1) {
+    if (i == 0) {
       numberAry.push(number);
       i++;
     } else {
@@ -33,7 +32,6 @@ const handleNumber = () => {
         }
         return false;
       };
-
       if (!isSame(number)) {
         numberAry.push(number);
         numberAry.sort((a, b) => a - b);
@@ -41,12 +39,11 @@ const handleNumber = () => {
       }
     }
   }
-  return numberAry;
+  paintNumber(numberAry);
 };
 
-const paintNumber = () => {
+const paintNumber = (numbers) => {
   const numberNodes = numbersContainer.childNodes;
-  const numbers = handleNumber();
   numberNodes.forEach((value) => {
     if (value.classList.contains("on")) {
       value.classList.remove("on");
@@ -61,4 +58,4 @@ const paintNumber = () => {
   }
 };
 
-btn.addEventListener("click", paintNumber);
+btn.addEventListener("click", handleNumber);

@@ -20,7 +20,7 @@ const handleNumber = () => {
   while (i < 6) {
     console.log(numberAry.length);
     const number = Math.floor(Math.random() * (46 - 1)) + 1;
-    if (i == 0) {
+    if (i === 0) {
       numberAry.push(number);
       i++;
     } else {

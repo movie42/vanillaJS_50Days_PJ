@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Find RGB</title>
+  </head>
+  <body>
+    <h1>RGB값을 입력하세요</h1>
+    <div id="app">
+      <canvas> </canvas>
+      <form>
+        <label for="red">R : </label>
+        <input
+          type="range"
+          min="0"
+          max="255"
+          value="0"
+          name="red"
+          id="red"
+        />
+        <div></div>
+        <label for="green">G : </label>
+        <input
+          type="range"
+          min="0"
+          max="255"
+          value="0"
+          name="green"
+          id="green"
+        />
+        <div></div>
+        <label for="blue">B : </label>
+        <input
+          type="range"
+          min="0"
+          max="255"
+          name="blue"
+          value="0"
+          id="blue"
+        />
+        <div></div>
+      </form>
+    </div>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

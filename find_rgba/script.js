@@ -1,10 +1,22 @@
-const canvas = document.querySelector("canvas");
 const rangeController = document.querySelectorAll("form input");
-const ctx = canvas.getContext("2d");
 
 let red = 0;
 let green = 0;
 let blue = 0;
+
+function handleCanvas(r, g, b) {
+  const canvas = document.querySelector("canvas");
+  const ctx = canvas.getContext("2d");
+
+  const stageWidth = document.body.clientWidth;
+  const stageHeight = document.body.clientHeight;
+
+  canvas.width = stageWidth;
+  canvas.height = stageHeight;
+
+  ctx.fillStyle = `rgba(${r}, ${g}, ${b}, 1)`;
+  ctx.fillRect(0, stageWidth, stageHeight, stageWidth);
+}
 
 function handleChange(e) {
   if (e.target.id === "red") {
@@ -17,9 +29,6 @@ function handleChange(e) {
     blue = e.target.value;
     e.target.nextElementSibling.innerText = blue;
   }
-
-  ctx.fillStyle = `rgba(${red},${green},${blue},1)`;
-  ctx.fillRect(10, 10, 150, 100);
 }
 
 function controller() {
@@ -29,4 +38,5 @@ function controller() {
   });
 }
 
+window.addEventListener("resize", handleCanvas);
 controller();
